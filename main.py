@@ -26,8 +26,13 @@ def get_min(my_list):
         if num_menor <= num:
             num_menor = num
     return num_menor
-
 #max de una lista
-elementos= input("introduce numeros (separados por comas):")
-num_mayor = max(elementos)
-print("el valor maximo es:",num_mayor)
+def get_max(my_list):
+    num_mayor = my_list[0]
+    for num in my_list:
+        if num > num_mayor:
+            num_mayor=num
+    return num_mayor
+
+
+
