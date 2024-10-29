@@ -1,5 +1,5 @@
 #serie de fibonacci
-from unittest.mock import right
+from operator import truediv
 
 
 def fibonacci(n):
@@ -61,4 +61,28 @@ def get_areaMax(altura):
         else:
             right=right-1
     return area_max
+#conjetura de Goldbach
+print("Conjetura de Goldbach ")
+n=int(input("ingrese su numero (par mayor a 2)"))
+if n<= 2 or n % 2!= 0:
+    print("La conjetura de Goldbach solo aplica a numeros pares mayores a 2 ")
+else:
+    num_prim=[]
+    for i  in range(2,n):
+        primo = True
+        for j in range(2,int(i*0.5)+1):
+            if i%j ==0:
+                primo = False
+                break
+        if  primo:
+            num_prim.append(i)
+    demostrar= False
+    for p in num_prim:
+        if(n-p) in num_prim:
+            print(f"{n} = {p} + {n-p}")
+            demostrar = True
+            break
+    if not demostrar:
+        print("no se encontro el par")
+
 
