@@ -1,11 +1,10 @@
 print("Ejercicio 2 secuencia de Fibonacci")
-num=input("introduce la cantidad de numeros de la secuencia deseas")
+num = int(input("Introduce la cantidad de números de la secuencia que deseas: "))
 print("numeros de la secuencia :",num)
 a=0
 b=1
 c=1
 print("La secuencia es:")
-print(" ",a,b)
 while c<=num:
     if c==1:
         print(" ",a)
@@ -16,4 +15,4 @@ while c<=num:
         print(" ",prox)
         a=b
         b=prox
-        c=c+1
+    c=c+1
