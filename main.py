@@ -20,6 +20,7 @@ def fibonacci(n):
     return res
 
 #min de una lista
+#prueba
 elementos = input("introduce numeros (separados por comas):")
 mi_lista = [int(num) for num in elementos.split(',')]
 print("la lista es:", mi_lista)
