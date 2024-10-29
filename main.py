@@ -1,3 +1,4 @@
+#serie de fibonacci
 def fibonacci(n):
     print("Ejercicio 2 secuencia de Fibonacci")
     print("numeros de la secuencia :")
@@ -33,6 +34,12 @@ def get_max(my_list):
         if num > num_mayor:
             num_mayor=num
     return num_mayor
-
+#comparar listas
+elementos1 = input("introduce numeros (separados por comas):")
+my_list1 = [int(num) for num in elementos1.split(',')]
+elementos2 = input("introduce numeros (separados por comas):")
+my_list2 = [int(num) for num in elementos2.split(',')]
+print("la lista 1 es:",my_list1)
+print("la lista 2 es:",my_list2)
 
 
