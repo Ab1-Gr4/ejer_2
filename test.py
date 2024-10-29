@@ -29,3 +29,6 @@ def test_comun():
 def test_areaMax():
     areaM=mn.area_max([1,8,6,2,5,4,8,3,7])
     assert  areaM == 49
+def test_Goldbach():
+    par=mn.get_Goldbach(24)
+    assert  par =="5 + 19"

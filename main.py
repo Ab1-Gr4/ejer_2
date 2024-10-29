@@ -1,6 +1,4 @@
 #serie de fibonacci
-from operator import truediv
-
 
 def fibonacci(n):
     print("Ejercicio 2 secuencia de Fibonacci")
@@ -61,12 +59,11 @@ def get_areaMax(altura):
         else:
             right=right-1
     return area_max
+
 #conjetura de Goldbach
-print("Conjetura de Goldbach ")
-n=int(input("ingrese su numero (par mayor a 2)"))
-if n<= 2 or n % 2!= 0:
-    print("La conjetura de Goldbach solo aplica a numeros pares mayores a 2 ")
-else:
+def get_Goldbach(n):
+    if n <= 2 or n % 2 != 0:
+        return "La conjetura de Goldbach solo aplica a numeros pares mayores a 2 "
     num_prim=[]
     for i  in range(2,n):
         primo = True
@@ -76,13 +73,11 @@ else:
                 break
         if  primo:
             num_prim.append(i)
-    demostrar= False
     for p in num_prim:
         if(n-p) in num_prim:
-            print(f"{n} = {p} + {n-p}")
-            demostrar = True
+            return f"{n} = {p} + {n-p}"
             break
-    if not demostrar:
-        print("no se encontro el par")
+
+    return "no se encontro el par"
 
 
