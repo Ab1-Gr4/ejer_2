@@ -1,7 +1,7 @@
+#main.py
 def fibonacci(n):
     print("Ejercicio 2 secuencia de Fibonacci")
-    num = int(input("Introduce la cantidad de números de la secuencia que deseas: "))
-    print("numeros de la secuencia :", num)
+    print("numeros de la secuencia :")
     a = 0
     b = 1
     c = 1
@@ -18,3 +18,4 @@ def fibonacci(n):
             a = b
             b = prox
         c = c + 1
+    return res
