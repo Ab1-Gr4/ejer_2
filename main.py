@@ -20,8 +20,9 @@ def fibonacci(n):
     return res
 
 #min de una lista
-elementos = input("introduce numeros (separados por comas):")
-mi_lista = [int(num) for num in elementos.split(',')]
-print("la lista es:", mi_lista)
-num_menor = min(mi_lista)
-print("El valor minimo es:",num_menor)
+def get_min(my_list):
+    num_menor = my_list[0]
+    for num in my_list:
+        if num_menor <= num:
+            num_menor = num
+    return num_menor
