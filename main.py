@@ -6,3 +6,14 @@ b=1
 c=1
 print("La secuencia es:")
 print(" ",a,b)
+while c<=num:
+    if c==1:
+        print(" ",a)
+    elif c==2:
+        print(" ",b)
+    else:
+        prox=a+b
+        print(" ",prox)
+        a=b
+        b=prox
+        c=c+1
