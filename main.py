@@ -18,8 +18,9 @@ def fibonacci(n):
             b = prox
         c = c + 1
     return res
+
 #min de una lista
 #prueba entrada de datos en una lista
-elementos= input("introduce numeros (separados por comas):")
+elementos = input("introduce numeros (separados por comas):")
 mi_lista = [int(num) for num in elementos.split(',')]
-print("la lista es:",mi_lista)
+print("la lista es:", mi_lista)
