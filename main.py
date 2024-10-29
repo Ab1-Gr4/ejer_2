@@ -1,4 +1,7 @@
 #serie de fibonacci
+from unittest.mock import right
+
+
 def fibonacci(n):
     print("Ejercicio 2 secuencia de Fibonacci")
     print("numeros de la secuencia :")
@@ -43,4 +46,20 @@ def get_comun(my_list1,my_list2):
                 comun.append(elem)
     return comun
 
+
+#tanque de agua
+altura= input("introduce las alturas (separados por comas):")
+my_list = [int(num) for num in altura.split(',')]
+left =0
+right=len(my_list)-1
+area_max =0
+while left < right:
+    distancia=right-left
+    area1=min(my_list[left],my_list[right])*distancia
+    area_max=max(area_max,area1)
+    if my_list[left]<my_list[right]:
+       left=left+1
+    else:
+        right=right-1
+print(area_max)
 
