@@ -48,18 +48,17 @@ def get_comun(my_list1,my_list2):
 
 
 #tanque de agua
-altura= input("introduce las alturas (separados por comas):")
-my_list = [int(num) for num in altura.split(',')]
-left =0
-right=len(my_list)-1
-area_max =0
-while left < right:
-    distancia=right-left
-    area1=min(my_list[left],my_list[right])*distancia
-    area_max=max(area_max,area1)
-    if my_list[left]<my_list[right]:
-       left=left+1
-    else:
-        right=right-1
-print(area_max)
+def get_areaMax(altura):
+    left =0
+    right=len(altura)-1
+    area_max =0
+    while left < right:
+        distancia=right-left
+        area1=min(altura[left],altura[right])*distancia
+        area_max=max(area_max,area1)
+        if altura[left]<altura[right]:
+            left=left+1
+        else:
+            right=right-1
+    return area_max
 

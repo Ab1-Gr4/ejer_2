@@ -26,3 +26,6 @@ def test_max2():
 def test_comun():
     comunes = mn.get_comun([1, 2, -3, 4, 5, 12],[1, 2, 3, 4, 5])
     assert comunes == [1,2,4,5]
+def test_areaMax():
+    areaM=mn.area_max([1,8,6,2,5,4,8,3,7])
+    assert  areaM == 49
