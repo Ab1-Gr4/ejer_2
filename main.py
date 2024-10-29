@@ -25,4 +25,4 @@ elementos = input("introduce numeros (separados por comas):")
 mi_lista = [int(num) for num in elementos.split(',')]
 print("la lista es:", mi_lista)
 num_menor = min(mi_lista)
-print("El valor minimo fue:",num_menor)
+print("El valor minimo es:",num_menor)
