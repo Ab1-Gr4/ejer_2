@@ -35,12 +35,12 @@ def get_max(my_list):
             num_mayor=num
     return num_mayor
 #comparar listas
-elementos1 = input("introduce numeros (separados por comas):")
-my_list1 = [int(num) for num in elementos1.split(',')]
-elementos2 = input("introduce numeros (separados por comas):")
-my_list2 = [int(num) for num in elementos2.split(',')]
-print("la lista 1 es:",my_list1)
-print("la lista 2 es:",my_list2)
-comun = [elem for elem in my_list1 if elem in my_list21]
-print("Elementos en comun:",comun)
+def get_comun(my_list1,my_list2):
+    comun=[]
+    for elem in my_list1:
+        if elem in my_list2:
+            if elem not in comun:
+                comun.append(elem)
+    return comun
+
 
